@@ -1,4 +1,5 @@
 ﻿// Таблица умножения
+
 MultiplyTable(6);
 void MultiplyTable(int n)
 {
