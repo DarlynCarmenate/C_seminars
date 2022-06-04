@@ -26,22 +26,23 @@ void PrintArray(int[,] array)
 	} 
 }
 
-int[,] FindNum(int[,] array, int num)
+string FindNum(int[,] array, int num)
 {
     for (int i = 0; i < array.GetLength(0); i++)
 	{
 		for (int j = 0; j < array.GetLength(1); j++)
 		{
-			if(array[i, j] == num) Console.WriteLine($"{i + 1}, {j + 1}");
+			if(array[i, j] == num) return $"{i + 1}, {j + 1}";
+            
 		}
 	} 
-    return array;
+    return "No element";
 }
 
 int[,] array = FillArray(5, 5);
 PrintArray(array);
 Console.WriteLine();
-FindNum(array, 4);
+Console.WriteLine(FindNum(array, 4));
 
 
 
