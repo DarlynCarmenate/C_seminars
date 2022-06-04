@@ -30,15 +30,13 @@ int Diagonal(int[,] array)
     int result = 0;
     for (int i = 0; i < array.GetLength(0); i++)
 	{
-		for (int j = 0; j < array.GetLength(1); j++)
-		{
-			if(i == j) result += array[i, j];
-		}
+		result += array[i, i];
+	
 	} 
     return result;
 }
 
-int[,] array = FillArray(5, 5);
+int[,] array = FillArray(3, 3);
 PrintArray(array);
 Console.WriteLine();
 Console.WriteLine(Diagonal(array));
