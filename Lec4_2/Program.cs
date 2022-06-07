@@ -6,4 +6,4 @@ int Factorial(int n)
     else return n * Factorial(n - 1);
 }
 
-Console.WriteLine(Factorial(5));
+Console.WriteLine(Factorial(4));
